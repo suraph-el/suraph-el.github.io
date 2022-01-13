@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Grade</title>
+    <link href="Grade.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+    <form action="http://mumstudents.org/params.php" method="POST">
+        <fieldset>
+            <legend> <h1>Retrieve your grade</h1></legend><br>
+   
+
+     <label>Full Name:<br> <input type="text" id="name" name="name" size="16"/></label> <br/>
+     <br>
+    <label>Student ID:<br> <input type="id" name="id" size="16" maxlength="6"/></label> <br/>
+    <br>
+    <label >Course  </label>
+     <select name="assignment" id="assignment" >
+        <option  > Select </option>
+        <option  > DBMS </option>
+        <option >FPP </option>
+        <option >MPP</option>
+        <option >Algorithm</option>
+        
+     </select> </br>
+    <br>
+    Entry:<br> 
+    <br>
+     <input type="radio" name="entry" value="Feb 2022" !--checked--/> Feb 2022 <br>
+     <br>
+     <input type="radio" name="entry" value="May 2022"/> May 2022<br>
+     <br>
+     <input type="radio" name="entry" value="August 2022"/> August 2022<br>
+ 
+     <br/>
+ 
+     Confirm that you are looking for your own grade?<br>
+     <input type="checkbox"  name="security" > Yes
+     <input type="checkbox"  name="security"> No<br>
+     <br/>
+     <input type="submit" value="Get Grade!">
+ </fieldset>
+    </form>          
+</div>
+</body> 
+</html>
