@@ -12,11 +12,8 @@ app.use(function (req, res, next) {
 })
 
 app.listen(port, () => console.log("Server start on port: " + port))
-
 app.get('/', (req, res) => {
-
-  var word= req.query.word;
-  // fetch the data and put it to res to send it back to client requesting it
+  var word= req.query.word; 
   var query= require('./word');
   query.queryWord(word, res);
   

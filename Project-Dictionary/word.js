@@ -12,15 +12,10 @@ exports.queryWord= function(word, res){
   });
   
   con.connect(function (err) {
-    if (err) throw err;
-    // console.log("DB Connected!");
-  });
-  
-  // var word= req.query.word;
-    // fetch the data
+    if (err) throw err; 
+  }); 
     var sql = `SELECT wordtype, definition FROM entries where word= '${word}'`;
-    //This is async function, a big problem,
-    con.query(sql, function (err, data) {
+       con.query(sql, function (err, data) {
       if (err) throw err;
       res.json(data);
       // con.end(() => console.log("DB Disconnected!"));
